@@ -5,7 +5,7 @@ import os
 # Set up argument parser
 parser = argparse.ArgumentParser(description="Format JSON log files with newline replacements.")
 parser.add_argument("input_file", type=str, help="The path to the input .gz file.")
-parser.add_argument("output_file", type=str, nargs="?", default="formatted.log", help="The path to the output file. Defaults to 'formatted-log-file.txt'.")
+parser.add_argument("output_file", type=str, nargs="?", default="formatted.json", help="The path to the output file. Defaults to 'formatted-log-file.txt'.")
 
 # Parse command-line arguments
 args = parser.parse_args()
