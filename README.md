@@ -26,10 +26,10 @@ python dia-formatter.py /path/to/diagnose.json.gz
 
 ## Formatted file 
 
-By default the output file is stored in the same directory with a name `formatted.log`
+By default the output file is stored in the same directory with a name `formatted.json`
 You can change the name and folder by adding a second parameter 
 ```shell
-python dia-formatter.py /path/to/diagnose.json.gz /path/to/formatted-file.log
+python dia-formatter.py /path/to/diagnose.json.gz /path/to/formatted-file.json
 ```
 
 ## Input file 
