@@ -34,4 +34,4 @@ python dia-formatter.py /path/to/diagnose.json.gz /path/to/formatted-file.json
 
 ## Input file 
 
-dia-formatter takes as input raw `.json` files or archived `.gz` files. 
+dia-formatter takes as input raw `.json` files or archived `.gz` or `.zip` files. 
