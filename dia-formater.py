@@ -23,6 +23,14 @@ elif file_extension == ".json":
     # If the file is a .json, read it normally
     with open(input_file, "r", encoding="utf-8") as file:
         log_content = file.read()
+elif file_extension == ".zip":
+    with zipfile.ZipFile(input_file, "r") as zip_ref:
+        # Expect the diagnose.json file inside
+        try:
+            with zip_ref.open("diagnose.json") as file:
+                log_content = file.read().decode("utf-8")
+        except KeyError:
+            raise ValueError("diagnose.json not found inside the ZIP file.")
 else:
     raise ValueError("Unsupported file format. Please provide a .gz or .json file.")
 
